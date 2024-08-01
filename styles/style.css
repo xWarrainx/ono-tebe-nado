@@ -132,6 +132,7 @@
     text-transform: uppercase;
     line-height: 1.614rem;
     border: 1px solid #FFFFFF;
+    background: none;
 }
 
 /* ------------Лоты------------ */
@@ -300,17 +301,12 @@
     width: 230px;
 }
 
-.footer__link {
-    text-decoration: none;
-    border-bottom: 1px solid #000;
-}
-
 .footer__menu {
     text-align: center;
     padding: 0 185px;
 }
 
-.footer__links-list{
+.footer__links-list {
     display: flex;
     flex-direction: column;
     justify-content: center;
