@@ -1,1 +1,342 @@
-/* место для вашего кода */
+
+/* ------------Header страницы------------ */
+
+.header {
+    padding: 92px 50px 92px;
+    display: grid;
+    grid-template-columns: 3fr auto 3fr;
+    font-size: 18px;
+}
+
+.header__menu {
+    align-content: center;
+}
+
+.header__links-list {
+    display: flex;
+    gap: 33px;
+}
+
+.header__links-list-item {
+    list-style: circle;
+}
+
+.header__links-list-item_no-bullit {
+    list-style: none;
+}
+
+.header__link {
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+}
+
+.header__link_active {
+    border: none;
+}
+
+.header__logo {
+    position: relative;
+}
+
+.header__logo-image {
+    max-height: 105px;
+}
+
+.address {
+    line-height: 1.5rem;
+    font-style: normal;
+    display: grid;
+    grid-template-columns: 194px auto;
+}
+
+.header__address {
+    align-content: center;
+    justify-self: start;
+    grid-column-start: 2;
+}
+
+/* ------------Оно тебе надо------------ */
+
+.cover {
+    background-image: url("../images/cover.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+/* Стой затемнения */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+    z-index: 1;
+}
+
+.cover__title {
+    color: #FFFFFF;
+    font-size: 100px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 165px 50px 135px;
+    line-height: 7.188rem;
+    letter-spacing: 0.3em;
+    position: relative;
+    z-index: 2;
+}
+
+.aligned-text_center {
+    text-align: center;
+    line-height: 8.75rem;
+}
+
+.aligned-text_right {
+    text-align: right;
+    line-height: 6.25rem;
+}
+
+.letter-spacing-extended {
+    letter-spacing: 0.6em;
+}
+
+.no-letter-spacing {
+    letter-spacing: 0;
+}
+
+.cover__description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.cover__description-text {
+    font-size: 22px;
+    color: #FFFFFF;
+    line-height: 1.75rem;
+    padding-left: 78px;
+    text-transform: uppercase;
+    word-spacing: 0.85em;
+}
+
+.bet-button {
+    margin-right: 50px;
+    padding: 12px 32px 11px 31px;
+    font-size: 22px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    line-height: 1.614rem;
+    border: 1px solid #FFFFFF;
+}
+
+/* ------------Лоты------------ */
+
+.lots {
+    margin: 179px 24px 152px;
+    height: 100%;
+}
+
+.lots__heading {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-left: 40px;
+    margin-bottom: 27px;
+}
+
+.lots__card-list {
+    display: flex;
+    gap: 25px;
+}
+
+.lots__card-list-item {
+    list-style: none;
+}
+
+.card-link {
+    display: block;
+}
+
+.card {
+    width: 334px;
+    min-height: 563px;
+    color: #FFFFFF;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.card__title {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 51px 40px 0;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    position: relative;
+    z-index: 2;
+    flex-grow: 1;
+}
+
+.card__text {
+    font-size: 20px;
+    padding: 0 40px 48px;
+    position: relative;
+    z-index: 2;
+}
+
+.card_type_film {
+    background-image: url("../images/card-lot-01.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.card_type_book {
+    background-image: url("../images/card-lot-02.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.card_type_picture {
+    background-image: url("../images/card-lot-03.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.lots__look-more-link {
+    margin: 30px 40px;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 1.5rem;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+}
+
+
+/* ------------Об аукционе------------ */
+
+.about {
+    margin: 146px 24px;
+    height: 100%;
+}
+
+.about__column {
+    display: grid;
+    grid-template-columns: 334px auto;
+    grid-template-rows: repeat(1fr, 2);
+    gap: 8px 25px;
+    justify-items: center;
+}
+
+.about__logo {
+    width: 240px;
+    height: 240px;
+    background-color: #000;
+    border-radius: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.about__logo-image {
+    width: 148px;
+    height: 114px;
+}
+
+.about__title {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    justify-self: start;
+    margin-top: 101px;
+}
+
+.about__heading {
+    font-size: 40px;
+    text-transform: uppercase;
+
+}
+
+.about__text {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+.about__text-p {
+    font-size: 20px;
+    line-height: 1.5rem;
+    word-spacing: 0.9px;
+
+}
+
+.about__text-last-p {
+    margin-top: 24px;
+    font-size: 20px;
+    line-height: 1.5rem;
+}
+
+
+/* ------------Footer страницы------------ */
+
+.footer {
+    position: relative;
+    margin: 181px 50px 88px;
+    display: grid;
+    font-size: 18px;
+    grid-template-columns: 3fr auto 3fr;
+}
+
+.footer__address {
+    align-content: center;
+    width: 230px;
+}
+
+.footer__link {
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+}
+
+.footer__menu {
+    text-align: center;
+    padding: 0 185px;
+}
+
+.footer__links-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__links-list-item {
+    list-style: none;
+}
+
+.footer__link {
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+}
+
+.footer__link_active {
+    border: none;
+}
+
+.footer__logo {
+    display: flex;
+    gap: 48px;
+    justify-content: right;
+}
+
+.footer__logo-image {
+    width: 48px;
+    height: 48px;;
+}
