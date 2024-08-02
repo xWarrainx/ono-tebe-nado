@@ -94,11 +94,13 @@
 .aligned-text_center {
     text-align: center;
     line-height: 8.75rem;
+    display: block;
 }
 
 .aligned-text_right {
     text-align: right;
     line-height: 6.25rem;
+    display: block;
 }
 
 .letter-spacing-extended {
